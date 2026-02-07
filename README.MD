@@ -20,8 +20,7 @@ The full exploratory analysis, visualizations, and evaluation plots are availabl
 ---
 
 ## 📂 Project Structure
-
-
+```
 project/
 │── notebook.ipynb          # Full research notebook with EDA & visualizations
 │── model.py                # Clean executable training script
@@ -31,8 +30,7 @@ project/
 │     └── model.h5          # Trained model
 │── requirements.txt        # Dependencies
 │── README.md               # Project documentation
-
-
+```
 
 ---
 
