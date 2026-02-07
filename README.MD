@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/preview.png" width="600">
+</p>
+
 # 📈 Stock Price Prediction using CNN + BiLSTM
 
 A deep learning model for forecasting stock prices using a hybrid architecture that combines Convolutional Neural Networks (CNN) and Bidirectional LSTM layers.  
@@ -14,23 +18,29 @@ This project demonstrates a complete pipeline for stock price prediction:
 - A hybrid **CNN + BiLSTM** deep learning model  
 - Model training and evaluation  
 - Saving the trained model for future inference  
-
-The full exploratory analysis, visualizations, and evaluation plots are available in the Jupyter Notebook.
+- Visualizing prediction results and training performance
 
 ---
 
 ## 📂 Project Structure
+
 ```
 project/
-│── notebook.ipynb          # Full research notebook with EDA & visualizations
-│── model.py                # Clean executable training script
+│── model.py                 # Clean executable training script with outputs
 │── data/
-│     └── AMZN.csv          # Dataset
+│     └── AMZN.csv           # Dataset
+│── images/
 │── saved_model/
 │     └── model.h5          # Trained model
-│── requirements.txt        # Dependencies
-│── README.md               # Project documentation
+│── results/
+│     ├── loss_curve.png
+│     ├── actual_vs_predicted.png
+│     ├── zoom_plot.png
+│     └── predictions.csv
+│── requirements.txt         # Dependencies
+│── README.md                # Project documentation
 ```
+
 
 ---
 
@@ -58,25 +68,24 @@ The model consists of:
 ## 🚀 How to Run
 
 ### **1. Install dependencies**
-
+```
 pip install -r requirements.txt
-
-
-
-2. Run the training script
-
+```
+### **2. Run the training script
+```
 python model.py
+```
 
+### **3. Output
 
-3. Output
+    Trained model saved as: saved_model/model.h5
 
-    Trained model saved as:
-saved_model/model.h5
-    Training logs printed in the console
+    Evaluation plots saved in: results/
 
+    Predictions saved in: results/predictions.csv
 
+---
 
-----
 📊 Evaluation
 
 The model is evaluated using:
@@ -85,31 +94,34 @@ The model is evaluated using:
 
     Mean Absolute Error (MAE)
 
-    R² Score
+Visualizations include:
 
-    Explained Variance
+    Training vs Validation Loss
 
-Visualizations of training curves and prediction results are available in notebook.ipynb.
+    Actual vs Predicted (first 200 samples)
 
+    Zoomed Actual vs Predicted (samples 50–120)
+
+All plots are saved in the results/ folder.
 
 ---
+
 📘 Notes
-
-    The .ipynb file contains the full exploratory data analysis (EDA), visualizations, and evaluation plots.
-
-    The model.py file is a clean, production-ready version of the training pipeline.
 
     The dataset (AMZN.csv) must be placed inside the data/ directory.
 
+    The model.py  file is a clean, production-ready version of the training pipeline.
+
+    The predictions are normalized percentage changes, not absolute prices.
 
 ---
+
 📬 Contact
 
 If you have questions or want to discuss the project, feel free to reach out.
 
 ---
 
-## 📄 License
+📄 License
 
 MIT License
-
