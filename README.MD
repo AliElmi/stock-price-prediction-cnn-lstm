@@ -32,7 +32,6 @@ project/
 │── README.md               # Project documentation
 
 
-
 ---
 
 ## 🧠 Model Architecture
