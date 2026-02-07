@@ -59,7 +59,7 @@ The model consists of:
 ## 🚀 How to Run
 
 ### **1. Install dependencies**
-```bash
+
 pip install -r requirements.txt
 
 
@@ -113,3 +113,4 @@ If you have questions or want to discuss the project, feel free to reach out.
 ## 📄 License
 
 MIT License
+
