@@ -77,7 +77,7 @@ saved_model/model.h5
 
 
 
-
+----
 📊 Evaluation
 
 The model is evaluated using:
@@ -93,7 +93,7 @@ The model is evaluated using:
 Visualizations of training curves and prediction results are available in notebook.ipynb.
 
 
-
+---
 📘 Notes
 
     The .ipynb file contains the full exploratory data analysis (EDA), visualizations, and evaluation plots.
@@ -103,8 +103,13 @@ Visualizations of training curves and prediction results are available in notebo
     The dataset (AMZN.csv) must be placed inside the data/ directory.
 
 
-
+---
 📬 Contact
 
 If you have questions or want to discuss the project, feel free to reach out.
 
+---
+
+## 📄 License
+
+MIT License
