@@ -11,7 +11,7 @@ from tensorflow.keras.layers import MaxPooling1D, Flatten
 # -----------------------------
 # 1. Load Dataset
 # -----------------------------
-data = pd.read_csv('./AMZN.csv')
+data = pd.read_csv('data/AMZN.csv')
 data.dropna(inplace=True)
 data.reset_index(drop=True, inplace=True)
 
